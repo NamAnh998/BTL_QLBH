@@ -10,27 +10,26 @@ using System.Text;
 
 namespace BTL_QLBH.Controllers
 {
-
-
     public class HomeController : Controller
     {
         QLBanHang db = new QLBanHang();
         public ActionResult Index()
         {
-            return View();
+            {
+                var sanphams = db.SanPhams.Include(S => S.LoaiSP);
+                return View(sanphams.ToList());
+            }
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
         public ActionResult Login()
@@ -92,7 +91,7 @@ namespace BTL_QLBH.Controllers
                     kh.password = GETMD5(kh.password);
                     db.Configuration.ValidateOnSaveEnabled = false;//check điều kiện
                     db.KhachHangs.Add(kh);
-                    db.SaveChanges();
+                        db.SaveChanges();
                     return RedirectToAction("Login");//trả về trang Login
                 }
                 else

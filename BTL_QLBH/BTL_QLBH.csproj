@@ -131,7 +131,9 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\KhachHangsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SanPhamsController.cs" />
     <Compile Include="Controllers\CTHDsController.cs" />
+    <Compile Include="Controllers\GiohangController.cs" />
     <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
@@ -170,8 +172,10 @@
       <DependentUpon>202012100840194_role_column.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\CTHD.cs" />
     <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\ImageHelper.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\LoaiSP.cs" />
     <Compile Include="Models\NhanVien.cs" />
@@ -188,16 +192,55 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\7Up.jpg" />
+    <Content Include="Images\ball.jpg" />
+    <Content Include="Images\bia33thung.jpg" />
+    <Content Include="Images\biabenthanhchai.jpg" />
+    <Content Include="Images\biaheinekenchai.jpg" />
+    <Content Include="Images\biaLEO.png" />
+    <Content Include="Images\biasaigonchai.jpg" />
+    <Content Include="Images\biasapporochai.jpg" />
+    <Content Include="Images\Biatiger.jpg" />
+    <Content Include="Images\biatigerthung.jpg" />
+    <Content Include="Images\BiaTsingTao.jpg" />
+    <Content Include="Images\butchiden.jpg" />
+    <Content Include="Images\butlongkim.jpg" />
+    <Content Include="Images\butsap.jpg" />
+    <Content Include="Images\cassetsharp.jpg" />
+    <Content Include="Images\cassetsharp500w.jpg" />
+    <Content Include="Images\cocacolathung.jpg" />
+    <Content Include="Images\pepsithung.jpg" />
+    <Content Include="Images\ruouchampagne.jpg" />
+    <Content Include="Images\ruouchatdo.jpg" />
+    <Content Include="Images\RuouChivas.jpg" />
+    <Content Include="Images\ruounapoleon.jpg" />
+    <Content Include="Images\ruounepgoden.jpg" />
+    <Content Include="Images\ruouoxo.jpg" />
+    <Content Include="Images\Ruouvangden.jpg" />
+    <Content Include="Images\Ruouvangdo.jpg" />
+    <Content Include="Images\RuouvangFume.jpg" />
+    <Content Include="Images\ruouvodka.png" />
+    <Content Include="Images\ruouvodkamen.jpg" />
+    <Content Include="Images\ruouxuanthanh.jpg" />
+    <Content Include="Images\TeaPlus.jpg" />
+    <Content Include="Images\tivisharp.jpg" />
+    <Content Include="Images\tivisony.jpg" />
+    <Content Include="Images\tulanhsanyo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHangs\Create.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHangs\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHangs\Details.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHangs\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\KhachHangs\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\SanPhams\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -255,6 +298,7 @@
     <Content Include="Views\SanPhams\Index.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Giohang\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

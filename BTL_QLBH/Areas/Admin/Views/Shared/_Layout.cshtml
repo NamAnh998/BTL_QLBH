@@ -19,12 +19,31 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li style="color:white;padding-top:15px;">
-                        Trang Chủ
-                    </li>
+                    
                     <li class="nav-item p-2">
                         @Html.ActionLink("Khách Hàng", "Index", "KhachHangs")
                     </li>
+                    <li class="nav-item p-2">
+                        @Html.ActionLink("Sản Phẩm", "Index", "SanPhams")
+                    </li>
+                    @if (Session["MaKhachHang"] == null)
+                    {
+                        <li class="nav-item p-2">
+                            @Html.ActionLink("Đăng ký", "Register","Home")
+                        </li>
+                        <li class="nav-item p-2">
+                            @Html.ActionLink("Đăng Nhập", "Login","Home")
+                        </li>
+                    }
+                    else
+                    {
+                        <li style="color: white; padding-top:15px">
+                            Xin Chào: @Session["TenKH"]
+                        </li>
+                        <li class="nav-item p-2">
+                            <a href="/Home/Logout">Đăng Xuất</a>"
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -42,4 +61,3 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-

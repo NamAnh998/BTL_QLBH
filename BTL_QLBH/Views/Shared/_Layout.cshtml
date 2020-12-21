@@ -23,13 +23,6 @@
                     <li class="nav-item p-2">
                         @Html.ActionLink("Trang Chủ", "Index", "Home")
                     </li>
-                    <li class="nav-item p-2">
-                        @Html.ActionLink("Sản Phẩm", "Index", "SanPhams")
-                    </li>
-                    <li class="nav-item p-2">
-                        @Html.ActionLink("Khách Hàng", "Index", "KhachHangs")
-                    </li>
-
                     @if (Session["MaKhachHang"] == null)
                     {
                         <li class="nav-item p-2">
@@ -57,7 +50,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Công ty bách hóa tổng hợp Online</p>
         </footer>
     </div>
 
